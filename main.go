@@ -14,7 +14,7 @@ func main() {
 	r.POST("/usuarios", crud.CreateUser)
 	r.GET("/usuarios", crud.GetUsers )
 	r.GET("/usuarios/:id", crud.GetUser )
-	//r.GET("/usuarios/:cep", crud.GetUsersByCity)
+	r.GET("/usuarios/:cep", crud.GetUsersByCity)
 	r.PUT("/usuarios/:id",crud.UpdateUser)
 	r.DELETE("/usuarios/:id", crud.DeleteUser)
 	
